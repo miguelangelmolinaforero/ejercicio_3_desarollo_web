@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <!-- titulo  -->
+    <h1>Formulario web de contacto</h1>
+    <!-- inicio del form -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Información personal</legend>
+            <!-- nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <br>
+            <!-- apellido -->
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <br>
+            <!-- edad -->
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" placeholder="Escribe tu edad">
+            <br>
+            <!-- telefono -->
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+            <br>
+            <!-- correo -->
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo" size="40" placeholder="Correo">
+            <br>
+            <!-- fecha -->
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+            <br>
+            <!-- genero -->
+            <label for="">Género</label>
+            <br>
+            <input type="radio" name="boton"> Hombre<br>
+            <input type="radio" name="boton"> Mujer <br>
+            <input type="radio" name="boton"> Otro <br>
+            <!-- ciudad -->
+            <label for="">Ciudad</label>
+            <select name="" id="">
+                <option value="">Bogotá D. C.</option>
+                <option value="">Medellín</option>
+                <option value="">Cali</option>
+                <option value="">Bucaramanga</option>
+                <option value="">Barranquilla</option>
+                <option value="">Cartagena</option>
+                <option value="">Neiva</option>
+                <option value="">Tolima</option>
+                <option value="">Cúcuta</option>
+                <option value="">Montería</option>
+                <option value="">Pereira</option>
+                <option value="">Caldas</option>
+            </select>
+            <br>
+            <!-- terminos y condiciones -->
+            <label for="layman_terms">Términos y condiciones</label>
+            <input type="checkbox" name="layman_terms" id="layman_terms">
+            <br>
+            <!-- boton de enviar -->
+            <input type="submit" value="Enviar" onclick="mensaje('Se ha enviado el formulario')">
+        </fieldset>
+        <!-- fin del form -->
+    </form>
+    <!-- etiqueta js -->
+    <script>
+        // funcion que muestra el mensaje en pantalla
+        function mensaje(texto) {
+            alert(texto);
+        }
+        // fin etiqueta js
+    </script>
+    <!-- fin del body -->
+</body>
+
+</html>
